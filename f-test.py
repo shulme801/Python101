@@ -1,0 +1,1 @@
+print(f"I like the number {3}.")
