@@ -1,3 +1,6 @@
+# Author: Stephen H Hulme 8 Nov 2020
+# In this simple program I'm simply testing some string operations and functions.
+
 first_name = "stephen"
 sur_name = "hulme"
 full_name = f"{first_name} {sur_name}"
