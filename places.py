@@ -1,0 +1,10 @@
+places = ['rome', 'london', 'middlewich', 'isla mujeres', 'paris']
+print(f'\nList in original order: {places}')
+print(f'\nList in sorted order: {sorted(places)}')
+print(f'\nList in reverse order: {sorted(places,reverse=True)}')
+print(f'\nList in original order: {places}')
+places.reverse()
+print(f'\nList in reverse order: {places}')
+places.reverse()
+print(f'\nList in original order: {places}')
+# print(places)
