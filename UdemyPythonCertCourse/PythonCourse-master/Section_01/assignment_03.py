@@ -21,7 +21,15 @@ word = "Cool"
 # Expected Result Printed: [[Cool]]
 
 # Your code below:
-
+chars = "[[]]"
+word = "Cool"
+result = chars[:2]+word+chars[2:]
+print("Result is "+result+"\n")
+"""
+My code
+"""
+loc = chars.rindex("[")+1
+print("\nAnd result is "+chars[:loc]+word+chars[loc:]+"\n")
 
 
 

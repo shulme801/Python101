@@ -15,6 +15,8 @@
 
 word1 = "Computer"
 word2 = "Truck"
+print("\n"+word1[1:]+word2[0]+word2[2:]+"\n")
+
 
 # Expected Result Printed: omputerTuck
 
