@@ -16,6 +16,10 @@
 
 """
 
+
+
+
+# Your code below:
 chars = "<<[]]]>" # this could be a very long string with an even length.
 word = "Cool"
 splitChar= int(len(chars)/2)
@@ -23,10 +27,6 @@ result = chars[:splitChar]+word+chars[splitChar:]
 print("\nNew string is "+result+"\n")
 
 # Expected Result Printed: <<[Cool]]]
-
-
-# Your code below:
-
 
 
 
