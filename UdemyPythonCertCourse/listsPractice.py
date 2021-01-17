@@ -17,9 +17,22 @@ print("\nAfter sort and reverse, my list is {0}\n".format(myList))
 print("\nand the reverse function call returned {0}\n".format(howdy))
 """
 # Try reverse and sort methods with string elements in the list
-myList = ['a','c','q','ce','d','b','bq','qbed','qaed','z']
-print("\nmyList is initially {0}\n".format(myList))
+# myList = ['a','c','q','ce','d','b','bq','qbed','qaed','z']
+# print("\nmyList is initially {0}\n".format(myList))
 #
-howdy = myList.sort()
-print("\nAfter sort, my list is {0}\n".format(myList))
-print("\nand the sort function call returned {0}\n".format(howdy))
+# howdy = myList.sort()
+# print("\nAfter sort, my list is {0}\n".format(myList))
+# print("\nand the sort function call returned {0}\n".format(howdy))
+
+myString = "This is a string"
+
+strLen = len(myString)
+print("\nThis is my string {}\n".format(myString))
+
+print("\nmyString is {} characters long\n".format(len(myString)))
+
+aList = ['a','b','c','d','e']
+bList = ['1','2','3','4','5','6']
+stringEx = 'This is a string'
+bubba = str(aList+bList+list(stringEx))
+print("\nHere's my blended string {0}\n".format(bubba))
