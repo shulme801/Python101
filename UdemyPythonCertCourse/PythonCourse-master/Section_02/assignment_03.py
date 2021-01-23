@@ -15,9 +15,15 @@ original_list = ['cup', 'cereal', 'milk', (8, 4, 3)]
 num1 = original_list[3][0]
 num2 = original_list[3][1]
 num3 = original_list[3][2]
-sorted_list = sorted([num1, num2, num3])
-new_list = [original_list[0], original_list[1], original_list[2], tuple(sorted_list)]
-print(new_list)
+
+new_tuple = tuple(sorted([num1, num2, num3]))
+
+original_list.pop()
+original_list.append(new_tuple)
+print(original_list)
+
+
+
 
 
 
