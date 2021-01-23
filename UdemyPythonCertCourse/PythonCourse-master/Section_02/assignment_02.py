@@ -10,6 +10,16 @@ who owns a bike, a laptop and boat.
 """
 
 # your code below:
+peopleDict = {'Tom':  {'salary':20000, 'age': 22, 'owns': ['jacket', 'car', 'TV']},
+              'Mike': {'salary':24000, 'age': 27, 'owns': ['bike', 'laptop', 'boat']}}
+# print("\nHere's the people dictionary:\n" )
+# print(peopleDict)
+
+peopleList = [{'Tom':  {'salary':20000, 'age': 22, 'owns': ['jacket', 'car', 'TV']}},
+              {'Mike': {'salary':24000, 'age': 27, 'owns': ['bike', 'laptop', 'boat']}}]
+
+# print(peopleDict.get('Tom'))
+print(peopleList[0].get('Tom'))
 
 
 
