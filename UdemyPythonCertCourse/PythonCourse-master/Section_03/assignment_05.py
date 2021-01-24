@@ -16,9 +16,10 @@ Example:
 # Your Code Below:
 def key_list_items(key, **kwargs):
     value_list = kwargs[key]
-    return(value_list[-2])
+    print('value_list is '+str(value_list))
+    return(value_list[-2:len(value_list)])
 
-print(key_list_items("people", things=['book', 'tv'], people=['pete', 'mike', 'jan', 'tom']))
+print(key_list_items("people", things=['book', 'tv'], people=['pete', 'mike', 'jan', 'tom','fred'], ages=[10,20,30]))
 
 
 
