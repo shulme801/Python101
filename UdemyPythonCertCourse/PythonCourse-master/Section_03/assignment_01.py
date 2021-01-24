@@ -6,11 +6,37 @@
 """
 
 # your code below:
+def merge_lists(list_1, list_2):
+    '''
+        DOCSTRING: Merge two lists.
+    '''
+    return(list_1 + list_2)
 
-def merge_lists(list_a, list_b):
-    return list_a + list_b
+list_1 = ['moe', 'larry', 'curly']
+list_2 = [1, 2, 3, 4]
+print(merge_lists(list_1, list_2))
 
-print(merge_lists([1,2,3,4], ['a','b','c']))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def merge_lists(list_a, list_b):
+    # return list_a + list_b
+
+# print(merge_lists([1,2,3,4], ['a','b','c']))
 
 
 
