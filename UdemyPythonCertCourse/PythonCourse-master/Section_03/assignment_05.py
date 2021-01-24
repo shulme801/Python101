@@ -3,7 +3,7 @@
 """
 Define a function called key_list_items that can accept an unlimited number
 of lists along with another argument. The function should return
-the second_folder to last item in the specific list specified by the user of the function.
+the second to last item in the specific list specified by the user of the function.
 
 Example:
 
@@ -14,7 +14,22 @@ Example:
 """
 
 # Your Code Below:
+def key_list_items(key, **kwargs):
+    value_list = kwargs[key]
+    return(value_list[-2])
 
+print(key_list_items("people", things=['book', 'tv'], people=['pete', 'mike', 'jan', 'tom']))
+
+
+
+
+
+
+
+
+
+
+'''
 def key_list_items(key, **kwargs):
     value_list = kwargs[key]
     return value_list[-2]
@@ -22,7 +37,7 @@ def key_list_items(key, **kwargs):
 result = key_list_items("things", things=['book', 'tv', 'shoes'], people=['pete', 'mike', 'jan', 'tom'],
                 ages=[20, 30, 40])
 print(result)
-
+'''
 
 
 

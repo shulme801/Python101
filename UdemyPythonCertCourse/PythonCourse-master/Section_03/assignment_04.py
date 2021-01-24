@@ -12,14 +12,28 @@ Example:
 
 """
 
-# Your code below:
 
+
+# Your code below:
+def last_list(*args):
+    return(args[-1])
+
+print(last_list([1,2,3,4,5], ['a', 'b', 'c'], ['mike', 'john']))
+
+
+
+
+
+
+
+
+'''
 def last_list(*args):
     return args[-1]
 
 
 print(last_list([1,2,3,4,5], ['a', 'b', 'c'], ['mike', 'john']))
-
+'''
 
 
 
