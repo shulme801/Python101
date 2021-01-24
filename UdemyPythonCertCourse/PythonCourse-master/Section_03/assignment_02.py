@@ -7,11 +7,28 @@
     Make sure to test the function.
 """
 # Your Code Below:
+def separate(in_string):
+    return(list(in_string))
+
+print(separate("Why do fools fall in love?"))
+
+
+
+
+
+
+
+
+
+
+
+
+'''
 def separate(str):
     return list(str)
 
 print(separate("hello there"))
-
+'''
 
 
 
