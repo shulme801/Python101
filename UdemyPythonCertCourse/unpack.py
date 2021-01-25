@@ -35,4 +35,4 @@ list_3 = [6, 7, 8,9]
 
 print(my_sum(*list_1, *list_2, *list_3))
 print(concatenate_keys(a="real", b="Python", c="Is", d="Great", e="!"))
-print(concatenate_values(a="real", b="Python", c="Is", d="Great", e="!"))
+print(concatenate_values(a="Real ", b="Python ", c="Is ", d="Great ", e="!"))
