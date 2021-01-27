@@ -15,4 +15,11 @@ print("\n\n")
 for item in enumerate(words,1):
     print(item)
 
+for i in range(10):
+    print(i, end = " ")
+print()
+
+for i in range(1,10,2):
+    print(i, end = " ")
+print()
 print("\nThat's all, Folks\n")
