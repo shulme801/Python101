@@ -18,6 +18,29 @@ Example:
 """
 
 def pay_extra(working, hour):
+    if (working):
+        if (hour >= 20):
+            return(True)
+        elif (hour < 8):
+            return(True)
+        else:
+            return(False)
+    else:
+        return(False)
+
+print(pay_extra(True,11))
+print(pay_extra(False, 5))
+print(pay_extra(True, 6))
+print(pay_extra(True, 21))
+print(pay_extra(True, 8))
+
+
+
+
+
+
+
+def pay_extra(working, hour):
     return (working and (hour < 8 or hour > 20))
 
 
