@@ -8,7 +8,31 @@ grow_string('abc') → 'aababc'
 grow_string('ab') → 'aab'
 
 """
+def grow_string(my_str):
+    grown = ""
+    for i in range(len(my_str)):
+        grown = grown+my_str[:i+1]
+        print('iteration {0}. string is {1}'.format(i,grown))
+        
+    return(grown)
 
+print(grow_string('Code'))
+print(grow_string(''))
+print(grow_string('a'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
 def grow_string(str):
 
     result = ""
@@ -20,7 +44,7 @@ def grow_string(str):
 
 print(grow_string("Imtiaz"))
 
-
+'''
 
 
 
