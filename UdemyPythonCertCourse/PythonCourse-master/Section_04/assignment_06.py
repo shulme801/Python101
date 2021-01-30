@@ -16,6 +16,10 @@ last2('axxxaaxx') → 2
 
 """
 
+
+
+
+"""
 def last2(str):
 
     if len(str) <= 2:
@@ -36,7 +40,7 @@ def last2(str):
 print(last2('hixxhi')) #→ 1
 print(last2('xaxxaxaxx')) #→ 1
 print(last2('axxxxaaxx')) #→ 3
-
+"""
 
 
 
