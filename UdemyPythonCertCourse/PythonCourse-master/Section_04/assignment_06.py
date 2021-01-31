@@ -16,15 +16,35 @@ last2('axxxaaxx') → 2
 
 """
 def last2(my_str):
-    my_str  = str(my_str) #make sure we're dealing with an actual string
-    sub_str = my_str[-2:len(my_str)]
-    str_count = my_str.count(sub_str,0,-2)
+    '''
+    DOCSTRING: Count the number of times that a substring consisting of the last 2 chars is present in the rest of the string.
+                Do not count the last two chars of the string as an occurrence.
+                If the string has less than 3 chars, the number of times the last 2 chars can appear in the rest of the string is
+                by definition 0.
+    '''
+    
+    my_str    = str(my_str) #make sure we're dealing with an actual string
+    str_count = 0
+    str_len   = len(my_str)
+    if (str_len > 3):
+        str_len -= 2
+        target_str = my_str[-2:]
+        for i in range(0,str_len,1):
+            sub_str = my_str[i:i+2]
+            # print('sub_str = '+sub_str)
+            # print('target_str = '+target_str)
+            if (sub_str == target_str):
+                str_count += 1
+        
     return(str_count)
 
 print(last2('bompshubompshubomp'))
 print(last2('h1xxh1'))
 print(last2('xaxxaxaxx'))
 print(last2('axxxxaaxx'))
+print(last2('axxxaaxx'))
+print(last2('xx'))
+print(last2('xxx'))
 
 
 """
