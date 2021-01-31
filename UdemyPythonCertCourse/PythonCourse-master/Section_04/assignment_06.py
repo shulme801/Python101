@@ -15,8 +15,16 @@ last2('xaxxaxaxx') → 1
 last2('axxxaaxx') → 2
 
 """
+def last2(my_str):
+    my_str  = str(my_str) #make sure we're dealing with an actual string
+    sub_str = my_str[-2:len(my_str)]
+    str_count = my_str.count(sub_str,0,-2)
+    return(str_count)
 
-
+print(last2('bompshubompshubomp'))
+print(last2('h1xxh1'))
+print(last2('xaxxaxaxx'))
+print(last2('axxxxaaxx'))
 
 
 """
