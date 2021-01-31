@@ -14,56 +14,45 @@ sum78([1, 1, 7, 8, 2]) → 4
 
 """
 
-def sum78(nums):
+def sum78(in_list):
+    """
+    DOCSTRING Return the sum of the numbers in the list, except ignore sections of
+              numbers starting with a 7 and extending to the next 8. Note that this code
+              correctly handles the situation when a list is passed in whose first element is 8.
+              The instructor's solution does not handle this situation.
+              This function uses a comprehension to turn all the list element into integers.
+              If the list passed in has 0 elements, it returns 0.
+              I still need to modify the function to reject input of non-numbers (e.g., print(sum78(['foo','bar']))).
 
+    """
     sum = 0
-    in_range = False
+    num_list = [int(x) for x in in_list if (x>0)]
+   
+    range7 = False
+    for i in range(len(num_list)):
+        if (num_list[i] == 7):
+            range7 = True
 
-    for i in range(len(nums)):
+        if (not range7 and num_list[i] !=8):
+            sum += num_list[i]
 
-        if nums[i] == 7:
-            in_range = True
-
-        if in_range == False:
-            # sum = sum + nums[i]
-            sum += nums[i]
-
-        if nums[i] == 8:
-            in_range = False
-
-    return sum
-
-
-print(sum78([1, 2, 2])) #→ 5
-print(sum78([1, 2, 2, 7, 99, 99, 8])) #→ 5
-print(sum78([1, 1, 7, 8, 2])) #→ 4
-
-
-
-
-
+        if (range7 and num_list[i] == 8):
+            range7 = False
+            
+    return(sum)
+    
+print(sum78([1, 2.2, 2]))
+print(sum78([1, 2, 2, 7, 99, 99, 8]))
+print(sum78([1, 1, 7, 8, 2]))
+print(sum78([7]))
+print(sum78([8]))
+print(sum78([8,1]))
+print(sum78([7,8]))
+print(sum78([7,88,8]))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
 # Solution:
 
 # def sum78(nums):
@@ -81,3 +70,4 @@ print(sum78([1, 1, 7, 8, 2])) #→ 4
 #             inRange = False
 #
 #     return sum
+"""
