@@ -38,6 +38,19 @@ d= {
 
 # Your Code below:
 # --------------------------------------
+
+
+# don't change the below:
+# --------------------------------------
+print("Value of fr: ")
+print(fr)
+print("Value of d:")
+print(d)
+
+
+
+
+"""
 line_list = []
 for line in fr:
     columns = line.split("|")
@@ -57,16 +70,7 @@ for line in fr:
 
 
 fr = line_list
-
-
-
-# don't change the below:
-# --------------------------------------
-print("Value of fr: ")
-print(fr)
-print("Value of d:")
-print(d)
-
+"""
 
 
 
