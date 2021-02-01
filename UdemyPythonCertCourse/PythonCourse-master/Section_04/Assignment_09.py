@@ -40,12 +40,30 @@ d= {
 # --------------------------------------
 
 
+line_list = []
+for entry in fr:
+    fr_cols = entry.split("|")
+    lookup_key = fr_cols[0]
+
+    if (d.get(lookup_key) == None): #this email addr not found in dict "d"
+        next_higher = int(max(d.values())) + 1
+        d[lookup_key] = str(next_higher)
+        fr_cols[0] = str(next_higher)
+        line_list.append("|".join(fr_cols))
+    else: #email address was found in dict "d"
+        fr_cols[0] = d.get(lookup_key)
+        line_list.append("|".join(fr_cols))
+fr = line_list
+    
 # don't change the below:
 # --------------------------------------
-print("Value of fr: ")
+print("Initial value of fr: ")
 print(fr)
-print("Value of d:")
+print("Initial value of d:")
 print(d)
+
+print("Here is the modified 'fr' {0} and the modified 'd' {1}".format(fr,d))
+
 
 
 
