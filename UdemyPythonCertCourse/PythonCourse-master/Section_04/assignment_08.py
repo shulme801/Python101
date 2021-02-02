@@ -33,7 +33,7 @@ def sum78(in_list):
         if (num_list[i] == 7):
             range7 = True
 
-        if (not range7 and num_list[i] !=8):
+        if (not range7):
             sum += num_list[i]
 
         if (range7 and num_list[i] == 8):
