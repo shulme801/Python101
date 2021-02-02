@@ -45,9 +45,10 @@ for entry in fr:
     fr_cols = entry.split("|")
     lookup_key = fr_cols[0]
 
-    if (d.get(lookup_key) == None): #this email addr not found in dict "d"
+    if (d.get(lookup_key) is None): #this email addr not found in dict "d"
         next_higher = int(max(d.values())) + 1
         d[lookup_key] = str(next_higher)
+        # print("now new dict val is {0}".format(d.get(lookup_key)))
         fr_cols[0] = str(next_higher)
         line_list.append("|".join(fr_cols))
     else: #email address was found in dict "d"
