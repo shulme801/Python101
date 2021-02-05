@@ -10,3 +10,5 @@ class Vehicle:
 
     def get_vehicle_count(self):
         return Vehicle.vehicle_counter
+
+    
