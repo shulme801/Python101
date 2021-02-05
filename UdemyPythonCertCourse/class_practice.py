@@ -25,4 +25,3 @@ print(type(car1))
 car1.color = 'purple' #wrong
 print(car1.color)
 print(car4.color)
-print(car5.vehicle_counter)
