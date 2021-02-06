@@ -12,9 +12,13 @@ class Vehicle:
         return Vehicle.vehicle_counter
 
     def drive(self):
-        print("Vehicle driving!")
+        print("Vehicle driving...")
 
 class Truck(Vehicle):
     def drive(self):
-        print("truck driving")
+        print("truck driving...")
+
+class Motorcycle(Vehicle):
+    def drive(self):
+        print("Motorcycle driving very fast...")
        
